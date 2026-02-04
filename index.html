@@ -68,12 +68,16 @@
           </div>
 
           <div class="footer__cell">
-            Copyright 2026 Crown Performance Additives Ltd<br />
+            Copyright <span id="year">2026</span> Crown Performance Additives Ltd<br />
             Company Reg No: 09799831<br />
             VAT Number: 223 3214 57
           </div>
         </div>
       </div>
     </footer>
+    <script>
+      const yearEl = document.querySelector('#year');
+      yearEl.innerText = (new Date).getFullYear();
+    </script>
   </body>
 </html>
